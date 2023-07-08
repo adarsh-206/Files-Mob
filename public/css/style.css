@@ -1,28 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
 :root {
-    --main-bg-color: #edf5fe;
-    --light-blue: #03a9f4;
-    --dark-blue: #028bca;
-  }
+  --main-bg-color: #fefcd3;                        
+  --light-yellow: #F9A826;                           
+  --border-color: #ffeba7;
+}
 
-  body {
-    font-family: system-ui;
-    background: var(--main-bg-color);
-    height: 98vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333;
-  }
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 98vh;
+  overflow: hidden;
+  background-color: #2a2b38;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c4c3ca;
+}
 
-  .logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 150px;
-  }
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 150px;
+}
+
 section.download {
-    background: #fff;
+    background: #201e1d;
     width: 430px;
     max-width: 90%;
     border-radius: 25px;
@@ -31,7 +35,7 @@ section.download {
     text-align: center;
 }
 .download__icon {
-    height: 8rem;
+    height: 7.5rem;
 }
 .download__meta h4 {
     margin-bottom: 0;
@@ -42,7 +46,7 @@ section.download {
     font-size: 18px;
     padding: 8px 40px;
     margin-top: 15px;
-    background: var(--light-blue);
+    background: var(--light-yellow);
     text-decoration: none;
     border: none;
     border-radius: 5px;
@@ -52,5 +56,6 @@ section.download {
   }
 
   .send-btn-container a:hover {
-      background: var(--dark-blue);
+      background: var(--main-bg-color);
+      color: var(--light-yellow);
   }
